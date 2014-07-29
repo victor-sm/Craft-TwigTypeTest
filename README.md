@@ -6,7 +6,7 @@ Test if a Twig Variable is of a certain type in Craft-CMS.
 
 ##Usage:
 
-**Test: ```of_type('test_name')```**
+####Test: ```of_type('test_name')```
 
 Check if a variable is of a specific type.
 
@@ -30,7 +30,7 @@ Available Tests:
  - [string](http://php.net/manual/en/function.is-string.php)
 
 
-**Filter: ```get_type```**
+####Filter: ```get_type```
 
 Return the type of a variable.
 
