@@ -18,7 +18,7 @@ Check if a variable is of a specific type.
 {% endif %}
 ```
 
-Available Tests:
+**Available Tests:**
 
  - [array](http://php.net/manual/en/function.is-array.php)
  - [bool](http://php.net/manual/en/function.is-bool.php)
