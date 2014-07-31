@@ -42,6 +42,7 @@ Return the type of a variable.
 will output:
 ``` object ```
 
+Alias for php's [``` gettype() ```](http://php.net/manual/en/function.gettype.php)
 
 ##Install:
 
