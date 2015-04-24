@@ -26,10 +26,10 @@ class TwigTypeTestTwigExtension extends \Twig_Extension
 		$this->env = $env;
 	}
 
-	public function twig_of_type($var, $type_test=null)
+	public function twig_of_type($var, $typeTest=null, $className=null)
 	{
 		
-		switch ($type_test)
+		switch ($typeTest)
 		{
 			default:
 				return false;
@@ -44,7 +44,7 @@ class TwigTypeTestTwigExtension extends \Twig_Extension
 				break;
 				
 			case 'class':
-				return is_object($var) === true && get_class($var) === $type_test;
+				return is_object($var) === true && get_class($var) === $className;
 				break;
 		
 			case 'float':
