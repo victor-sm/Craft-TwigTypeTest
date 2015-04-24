@@ -41,7 +41,11 @@ class TwigTypeTestTwigExtension extends \Twig_Extension
 				
 			case 'bool':
 				return is_bool($var);
-				break;	
+				break;
+				
+			case 'class':
+				return is_object($var) === true && get_class($var) === $type_test;
+				break;
 		
 			case 'float':
 				return is_float($var);
