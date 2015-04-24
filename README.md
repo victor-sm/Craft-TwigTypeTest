@@ -22,6 +22,7 @@ Check if a variable is of a specific type.
 
  - [array](http://php.net/manual/en/function.is-array.php)
  - [bool](http://php.net/manual/en/function.is-bool.php)
+ - [class](https://github.com/victor-in/Craft-TwigTypeTest/issues/1)
  - [float](http://php.net/manual/en/function.is-float.php)
  - [int](http://php.net/manual/en/function.is-int.php)
  - [numeric](http://php.net/manual/en/function.is-numeric.php)
