@@ -2,7 +2,7 @@
 /**
  * @package   Twig Type Test
  * @author    Victor In.
- * @copyright Copyright 2014
+ * @copyright Copyright 2016
  * @link      https://github.com/victor-in/Craft-TwigTypeTest
  * @license   MIT
  */
@@ -10,27 +10,41 @@ namespace Craft;
 
 class TwigTypeTestPlugin extends BasePlugin
 {
-    function getName()
+    public function getName()
     {
-         return Craft::t('Twig Type Test');
+        return Craft::t('Twig Type Test');
     }
 
-    function getVersion()
+    public function getVersion()
     {
-        return '0.2';
+        return '0.3';
     }
+	
+	public function getSchemaVersion() {
+		return '0.1';
+	}
 
-    function getDeveloper()
+    public function getDeveloper()
     {
         return 'Victor In.';
     }
 
-    function getDeveloperUrl()
+    public function getDeveloperUrl()
     {
         return 'https://github.com/victor-in/';
     }
+	
+    public function getDocumentationUrl()
+    {
+        return 'https://github.com/victor-in/Craft-TwigTypeTest';
+    }
+	
+		public function getReleaseFeedUrl()
+	{
+		return 'https://github.com/victor-in/Craft-TwigTypeTest/blob/master/changelog.json';
+	}
 
-    function addTwigExtension()
+    public function addTwigExtension()
     {
         Craft::import('plugins.twigtypetest.twigextensions.TwigTypeTestTwigExtension');
         return new TwigTypeTestTwigExtension();
